@@ -23,6 +23,8 @@ public class TestScene extends CCColorLayer {
 		// TODO Auto-generated constructor stub
 
 		CGSize winSize = CCDirector.sharedDirector().displaySize();
+		
+		//I made graphics for screen 720*1200....so I made this dynamic scale to support multiple screens
 		float sX = winSize.width / 720.0f;
 		float sY = winSize.height / 1200.0f;
 		background = CCVerticalParallaxNode.node(sX, sY, true);
